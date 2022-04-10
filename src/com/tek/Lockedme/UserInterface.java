@@ -24,7 +24,23 @@ public class UserInterface {
 	
 		System.out.println("3----->    exit");
 		
-		int x= scanner.nextInt();
+		int x=1;
+		
+		while(x>0)             //for the invalid input from the user 
+		{
+			x = scanner.nextInt();
+			if(x!=1&&x!=21&&x!=22&&x!=23&&x!=24&&x!=3)
+			{
+				
+			
+				System.out.println("invalid option enter again");
+		     }
+			else
+			{
+				
+				break;
+			}
+		}
 		
 			if(x==21||x==22||x==23)          //file name required from only some operation
 			{
